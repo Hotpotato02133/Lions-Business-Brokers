@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lions Brokers Australia</title>
+
+  <!-- Plugins -->
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css" />
+  <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
+
+  <!--CSS Files-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+  <!--page loader-->
+  <div class="loader-wrapper">
+    <div class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
+      <div class="spinner-border text-white" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <!--end loader-->
+
+  <!--start wrapper-->
+  <div class="wrapper">
+
+    <!--start top-info-section-->
+    <section class="top-info-section bg-dark text-white">
+      <div class="container-fluid d-flex justify-content-between align-items-center py-1">
+        <div class="contact-info">
+          <i class="bi bi-telephone-fill"></i> Phone 1300309094
+        </div>
+        <div class="auth-links">
+          <a href="authentication-sign-up.html" class="text-white me-3">Registration</a>
+          <a href="authentication-log-in.html" class="text-white">Login</a>
+        </div>
+      </div>
+    </section>
+    <!--end top-info-section-->
+
+    <!--start to header-->
+    <header class="top-header fixed-top border-bottom d-flex align-items-center">
+      <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
+        <!-- Logo on the left -->
+        <div class="brand-logo align-items-center text-start">
+          <a href="home.html"><img src="assets/images/lion-broker-logo.webp" width="95" alt=""></a>
+        </div>
+
+        <!-- Right-aligned Hamburger Button -->
+        <div class="ms-auto nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav">
+          <a href="javascript:;"><i class="bi bi-list"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!--end to header-->
+
+    <section class="business-brokers-section">
+      <div class="container">
+        <h2 class="text-white fw-bold text-center">Login | Registration</h2>
+      </div>
+    </section>
+
+    <!--start to page content-->
+    <div class="page-content">
+
+      <div class="container mt-3">
+        <!-- Breadcrumbs -->
+        <div class="d-flex justify-content-center w-100 align-items-center mb-4">
+            <div class="breadcrumbs text-center bg-blue text-white py-2 px-4 w-100">
+                <span style="font-size: 0.85rem;">
+                    <a href="business-overview.html" class="text-white text-decoration-none">Business Overview</a>
+                    /
+                    <a href="video-gallery.html" class="text-white text-decoration-none">Video Gallery</a>
+                    /
+                    <a href="photo-gallery.html" class="text-white text-decoration-none">Photo Gallery</a>
+                    /
+                    <a href="authentication-login-register.html" class="text-white text-decoration-none">Business Profile Request</a>
+                    /
+                    <a href="request-appointment.html" class="text-white text-decoration-none">Request Appointment</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button"
+              role="tab" aria-controls="login" aria-selected="true">Login</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button"
+              role="tab" aria-controls="register" aria-selected="false">Register</button>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content mt-4">
+          <!-- Login Tab -->
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <div class="login-body">
+              <h5 class="fw-bold d-flex flex-column align-items-center">Welcome Back</h5>
+              <p class="d-flex flex-column align-items-center mb-0">Client's First Name</p>
+              <form class="mt-4">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInputEmail"
+                    placeholder="EMAIL ADDRESS">
+                  <label for="floatingInputEmail">Email</label>
+                </div>
+
+                <div class="input-group mb-3" id="show_hide_password">
+                  <div class="form-floating flex-grow-1">
+                    <input type="password" class="form-control rounded-3 rounded-end-0 border-end-0"
+                      id="floatingInputPassword" placeholder="PASSWORD">
+                    <label for="floatingInputPassword">Password</label>
+                  </div>
+                  <span class="input-group-text bg-transparent rounded-start-0 rounded-3"><i
+                      class="bi bi-eye-slash"></i></span>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Remember</label>
+                  </div>
+                  <div><a href="authentication-change-password.html" class="forgot-link">Forgot Password?</a></div>
+                </div>
+
+                <div class="g-recaptcha mb-3" data-sitekey="YOUR_SITE_KEY"></div>
+
+                <div class="mb-0 d-grid">
+                  <a href="otp-nda.html" class="btn btn-dark btn-ecomm rounded-3">Log In</a>
+                </div>
+
+                <div class="separator my-4 d-flex align-items-center justify-content-center">
+                  <div class="line flex-grow-1"></div>
+                  <p class="mb-0 fw-bold px-3 text-center">Or</p>
+                  <div class="line flex-grow-1"></div>
+                </div>
+
+                <div class="social-login d-flex flex-row gap-2 justify-content-center">
+                  <a href="javascript:;" class="bg-facebook rounded-0">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="javascript:;" class="bg-pinterest rounded-0">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Registration Tab -->
+          <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+            <div class="login-body">
+              <h5 class="fw-bold d-flex flex-column align-items-center">Please Register</h5>
+              <p class="d-flex flex-column align-items-center mb-0">Sign Up For Finding the Right Seller or Buyer</p>
+              <form class="mt-4">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInputFirstName"
+                    placeholder="FIRST NAME">
+                  <label for="floatingInputFirstName">FIRST NAME</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInputLastName" placeholder="LAST NAME">
+                  <label for="floatingInputLastName">LAST NAME</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInputEmailReg"
+                    placeholder="EMAIL ADDRESS">
+                  <label for="floatingInputEmailReg">EMAIL ADDRESS</label>
+                </div>
+                
+                <!-- Dropdown Section -->
+                <div class="form-floating mb-3">
+                  <select class="form-select rounded-3 text-muted" id="floatingSelectPurpose" aria-label="Purpose Selection">
+                    <option selected disabled>Choose an option</option>
+                    <option value="buying">Buying a Business</option>
+                    <option value="selling">Selling a Business</option>
+                    <option value="join-lions">Looking to Join Lions</option>
+                  </select>
+                  <label for="floatingSelectPurpose">I am...</label>
+                </div>
+
+                <div class="input-group mb-3" id="show_hide_password">
+                  <div class="form-floating flex-grow-1">
+                    <input type="password" class="form-control rounded-3 border-end-0 rounded-end-0"
+                      id="floatingInputPasswordReg" placeholder="ENTER PASSWORD">
+                    <label for="floatingInputPasswordReg">PASSWORD</label>
+                  </div>
+                  <span class="input-group-text bg-transparent rounded-3 rounded-start-0"><i
+                      class="bi bi-eye-slash"></i></span>
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="form-floating flex-grow-1">
+                    <input type="password" class="form-control rounded-3 border-end-0 rounded-end-0"
+                      id="floatingConfirmPassword" placeholder="CONFIRM PASSWORD">
+                    <label for="floatingConfirmPassword">CONFIRM PASSWORD</label>
+                  </div>
+                  <span class="input-group-text bg-transparent rounded-3 rounded-start-0"><i
+                      class="bi bi-eye-slash"></i></span>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+                    <label class="form-check-label" for="termsCheck">
+                      I have read and agree to the Terms of Service and Privacy Policy
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mb-0 d-grid">
+                  <a href="splash-nda.html" class="btn btn-dark btn-ecomm rounded-3">REGISTER</a>
+                </div>
+
+                <div class="separator my-4 d-flex align-items-center justify-content-center">
+                  <div class="line flex-grow-1"></div>
+                  <p class="mb-0 fw-bold px-3 text-center">Or</p>
+                  <div class="line flex-grow-1"></div>
+                </div>
+
+                <div class="social-login d-flex flex-row gap-2 justify-content-center">
+                  <a href="javascript:;" class="bg-facebook rounded-0">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="javascript:;" class="bg-pinterest rounded-0">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--end to page content-->
+
+
+    <!--start to footer-->
+    <footer class="page-footer fixed-bottom border-top d-flex align-items-center justify-content-center">
+      <p class="mb-0 rounded-0">Don't have an account? <a href="authentication-sign-up.html" class="text-danger">Sign
+          Up</a></p>
+    </footer>
+    <!--end to footer-->
+
+    <!--start sidenav-->
+    <div class="sidenav">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
+        <div class="offcanvas-header bg-blue border-bottom border-light">
+          <div class="hstack gap-3">
+            <div class="">
+              <img src="https://via.placeholder.com/110X110" width="45" class="rounded-circle p-1 bg-white" alt="" />
+            </div>
+            <div class="details">
+              <h6 class="mb-0 text-white">Hi! James</h6>
+            </div>
+          </div>
+          <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+        </div>
+        <div class="offcanvas-body p-0">
+          <nav class="sidebar-nav">
+            <ul class="metismenu" id="sidenav">
+              <li>
+                <a href="home.html">
+                  <i class="bi bi-house-door me-2"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="has-arrow" href="javascript:;">
+                  <i class="bi bi-briefcase me-2"></i>
+                  Buy A Business
+                </a>
+                <ul>
+                  <li><a href="lions-brokerage-services.html">Lions Buyers Services</a></li>
+                  <li><a href="lions-buy-business.html">Buy a Business</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="has-arrow" href="javascript:;">
+                  <i class="bi bi-currency-dollar me-2"></i>
+                  Sell A Business
+                </a>
+                <ul>
+                  <li><a href="sell-brokerage-services.html">Lions Seller Services</a></li>
+                  <li><a href="sell-a-business.html">Sell a Business</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="business-opportunities.html">
+                  <i class="bi bi-lightbulb me-2"></i>
+                  Business Opportunities
+                </a>
+              </li>
+              <li>
+                <a href="join-lions.html">
+                  <i class="bi bi-people me-2"></i>
+                  Join Lions
+                </a>
+              </li>
+              <li>
+                <a href="success-story.html">
+                  <i class="bi bi-trophy me-2"></i>
+                  Success Stories
+                </a>
+              </li>
+              <li>
+                <a href="entrepreneur-center.html">
+                  <i class="bi bi-lightning-fill me-2"></i>
+                  Entrepreneur Center
+                </a>
+                <!-- <ul>
+                              <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
+                              <li><a href="write-a-review.html">Write a Review</a></li>
+                            </ul> -->
+              </li>
+              <li>
+                <a class="has-arrow" href="javascript:;">
+                  <i class="bi bi-building me-2"></i>
+                  Company
+                </a>
+                <ul>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="terms-of-service.html">Terms of service</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="gallery.html">
+                  <i class="bi bi-images me-2"></i>
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="authentication-log-in.html">
+                  <i class="bi bi-person-lines-fill me-2"></i>
+                  Login/Registration
+                </a>
+              </li>
+              <li>
+                <a href="home.html">
+                  <i class="bi bi-box-arrow-right me-2"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="offcanvas-footer border-top p-3">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="DarkMode" onchange="toggleTheme()">
+            <label class="form-check-label" for="DarkMode">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end sidenav-->
+
+  </div>
+  <!--end wrapper-->
+
+
+  <!--JS Files-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/show-hide-password.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/cookies-theme-switcher.js"></script>
+  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="assets/plugins/slick/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
+
+
+</body>
+
+</html>
